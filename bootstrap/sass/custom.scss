@@ -1,0 +1,151 @@
+// Kill round border-radius
+
+.well, .dropdown-menu, .nav-tabs > li > a, .nav-pills > li > a, .breadcrumb, .pagination, .input-group-addon {
+  border-radius: 0;
+}
+
+// Navbar and nav tweaks
+
+.navbar {
+  font-family: "Bebas Neue";
+  border: 0px;
+}
+
+.navbar-brand {
+  padding: 8px 15px;
+}
+
+.nav {
+  .open > a {
+    &,
+    &:hover,
+    &:focus {
+      border-color: transparent;
+    }
+  }
+}
+
+.nav-tabs > li > a, .nav-pills > li > a {
+  color: $gray-light;
+  margin-right: 0;
+}
+
+.nav-pills >li {
+  &.active > a {
+    &,
+    &:hover,
+    &:focus {
+      background: linear-gradient(to top, #cc0000 0%,#cc0000 5px, $gray  5px);
+    }
+  }
+}
+
+// Dropdown tweaks
+
+.open {
+  > .dropdown-toggle {
+    background: linear-gradient(to right, #cc0000 0%,#cc0000 5px, $gray  5px);
+  }
+}
+
+.dropdown-menu {
+  padding: 0;
+  margin: 0;
+  border: 0px;
+
+  .divider {
+    margin: 5px auto;
+    width: 80%;
+  }
+
+  li {
+    &.active {
+      background: linear-gradient(to rigth, #cc0000 0%,#cc0000 5px, $gray-light  5px);
+    }
+  }
+}
+
+// Table tweaks
+
+.table {
+  color: #aaaaaa;
+}
+
+.table > thead {
+  color: $gray-light;
+}
+
+// Pagination tweaks
+.pagination {
+  > li {
+    &:first-child {
+      > a,
+      > span {
+        margin-left: 0;
+        @include border-left-radius(0);
+      }
+    }
+    &:last-child {
+      > a,
+      > span {
+        @include border-right-radius(0);
+      }
+    }
+  }
+}
+
+// Pager tweaks
+.pager {
+  a {
+    color: $gray-light;
+  }
+
+  .disabled {
+    > a,
+    > a:hover,
+    > a:focus,
+    > span {
+      background-color: $pager-disabled-bg;
+    }
+  }
+}
+
+// Badge tweaks
+.badge {
+  position: relative;
+  top: -1px;
+}
+
+.jumbotron {
+  .container &,
+  .container-fluid & {
+    border-radius: 0;
+  }
+}
+
+.list-group-item {
+  color: $gray-dark;
+
+  // Active class on item itself, not parent
+  &.active,
+  &.active:hover,
+  &.active:focus {
+    background: linear-gradient(to right, #cc0000 0%,#cc0000 5px,lighten(#181818, 5%) 5px);
+  }
+}
+
+.panel {
+  color: $gray-dark;
+}
+
+.well {
+  color: $well-color;
+}
+
+.help-block {
+  color: lighten($gray, 25%); // lighten the text some for contrast
+}
+
+.popover, .modal {
+  color: $gray;
+}
