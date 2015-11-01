@@ -10,4 +10,3 @@
 ## Recomendations
 
 - New changes are highly recommended to be included in customVars
-- Repo includes an html file displaying all elements and a node server to run it
