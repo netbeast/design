@@ -1,5 +1,7 @@
 # Netbeast style guide
 
+Check out how the netbeast styles look like at the [styleguide](http://netbeast-co.github.io/design/)
+
 ## Main components
 
 - Generic bootstrap Sass styles are included under stylesheets
