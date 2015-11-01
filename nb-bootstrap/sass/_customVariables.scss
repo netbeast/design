@@ -6,20 +6,20 @@ $bootstrap-sass-asset-helper: false !default;
 
 //== Colors
 //
-//## Gray and brand colors for use across Bootstrap.
+//## grey and brand colors for use across Bootstrap.
 
-/*$gray-base:              #000 !default;
-$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
-$gray-dark:              lighten($gray-base, 20%) !default;   // #333
-$gray:                   lighten($gray-base, 33.5%) !default; // #555
-$gray-light:             lighten($gray-base, 46.7%) !default; // #777
-$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee*/
-$gray:                   #575757 !default; // #555
-$gray-base:              darken($gray, 33.5%) !default;
-$gray-darker:            #0f0f0f !default; // #222
-$gray-dark:              #191919 !default;   // #333
-$gray-light:             #eaeaea !default; // #777
-$gray-lighter:           #f4f4f4 !default; // #eee
+/*$grey-base:              #000 !default;
+$grey-darker:            lighten($grey-base, 13.5%) !default; // #222
+$grey-dark:              lighten($grey-base, 20%) !default;   // #333
+$grey:                   lighten($grey-base, 33.5%) !default; // #555
+$grey-light:             lighten($grey-base, 46.7%) !default; // #777
+$grey-lighter:           lighten($grey-base, 93.5%) !default; // #eee*/
+$grey:                   #575757 !default; // #555
+$grey-base:              darken($grey, 33.5%) !default;
+$grey-darker:            #0f0f0f !default; // #222
+$grey-dark:              #191919 !default;   // #333
+$grey-light:             #eaeaea !default; // #777
+$grey-lighter:           #f4f4f4 !default; // #eee
 
 //$brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
 $brand-primary:         #CC0000 !default; // #337ab7
@@ -40,8 +40,8 @@ $brand-danger:          #d9534f !default;
 $body-bg:               #181818 !default;
 
 //** Global text color on `<body>`.
-//$text-color:            $gray-dark !default;
-$text-color:            $gray-light !default;
+//$text-color:            $grey-dark !default;
+$text-color:            $grey-light !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
@@ -181,14 +181,14 @@ $table-border-color:            #ddd !default;
 $btn-font-weight:                normal !default;
 
 //$btn-default-color:              #333 !default;
-$btn-default-color:              $gray-light !default;
+$btn-default-color:              $grey-light !default;
 //$btn-default-bg:                 #fff !default;
-$btn-default-bg:                 $gray !default;
+$btn-default-bg:                 $grey !default;
 //$btn-default-border:             #ccc !default;
 $btn-default-border:             transparent !default;
 
 //$btn-primary-color:              #fff !default;
-$btn-primary-color:              $gray-light !default;
+$btn-primary-color:              $grey-light !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             darken($btn-primary-bg, 5%) !default;
 
@@ -208,7 +208,7 @@ $btn-danger-color:               #fff !default;
 $btn-danger-bg:                  $brand-danger !default;
 $btn-danger-border:              darken($btn-danger-bg, 5%) !default;
 
-$btn-link-disabled-color:        $gray-light !default;
+$btn-link-disabled-color:        $grey-light !default;
 
 // Allows for customizing button radius independently from global border radius
 //$btn-border-radius-base:         $border-radius-base !default;
@@ -226,10 +226,10 @@ $btn-border-radius-small:        0 !default;
 //** `<input>` background color
 $input-bg:                       #fff !default;
 //** `<input disabled>` background color
-$input-bg-disabled:              $gray-lighter !default;
+$input-bg-disabled:              $grey-lighter !default;
 
 //** Text color for `<input>`s
-$input-color:                    $gray !default;
+$input-color:                    $grey !default;
 //** `<input>` border color
 //$input-border:                   #ccc !default;
 $input-border:                   transparent !default;
@@ -263,13 +263,13 @@ $input-height-small:             (floor($font-size-small * $line-height-small) +
 //** `.form-group` margin
 $form-group-margin-bottom:       15px !default;
 
-//$legend-color:                   $gray-dark !default;
-$legend-color:                   $gray-dark !default;
+//$legend-color:                   $grey-dark !default;
+$legend-color:                   $grey-dark !default;
 //$legend-border-color:            #e5e5e5 !default;
 $legend-border-color:            $brand-primary !default;
 
 //** Background color for textual input addons
-$input-group-addon-bg:           $gray-lighter !default;
+$input-group-addon-bg:           $grey-lighter !default;
 //** Border color for textual input addons
 $input-group-addon-border-color: $input-border !default;
 
@@ -283,7 +283,7 @@ $cursor-disabled:                not-allowed !default;
 
 //** Background for the dropdown menu.
 //$dropdown-bg:                    #fff !default;
-$dropdown-bg:                    $gray !default;
+$dropdown-bg:                    $grey !default;
 //** Dropdown menu `border-color`.
 $dropdown-border:                rgba(0,0,0,.15) !default;
 //** Dropdown menu `border-color` **for IE8**.
@@ -292,10 +292,10 @@ $dropdown-fallback-border:       #ccc !default;
 $dropdown-divider-bg:            #e5e5e5 !default;
 
 //** Dropdown link text color.
-//$dropdown-link-color:            $gray-dark !default;
-$dropdown-link-color:            $gray-light !default;
+//$dropdown-link-color:            $grey-dark !default;
+$dropdown-link-color:            $grey-light !default;
 //** Hover color for dropdown links.
-$dropdown-link-hover-color:      darken($gray-dark, 5%) !default;
+$dropdown-link-hover-color:      darken($grey-dark, 5%) !default;
 //** Hover background for dropdown links.
 $dropdown-link-hover-bg:         #f5f5f5 !default;
 
@@ -305,10 +305,10 @@ $dropdown-link-active-color:     $component-active-color !default;
 $dropdown-link-active-bg:        $component-active-bg !default;
 
 //** Disabled dropdown menu item background color.
-$dropdown-link-disabled-color:   $gray-light !default;
+$dropdown-link-disabled-color:   $grey-light !default;
 
 //** Text color for headers within dropdown menus.
-$dropdown-header-color:          $gray-light !default;
+$dropdown-header-color:          $grey-light !default;
 
 //** Deprecated `$dropdown-caret-color` as of v3.1.0
 $dropdown-caret-color:           #000 !default;
@@ -454,12 +454,12 @@ $navbar-default-toggle-border-color:       #ddd !default;
 
 //=== Inverted navbar
 // Reset inverted navbar basics
-$navbar-inverse-color:                      lighten($gray-light, 15%) !default;
+$navbar-inverse-color:                      lighten($grey-light, 15%) !default;
 $navbar-inverse-bg:                         #222 !default;
 $navbar-inverse-border:                     darken($navbar-inverse-bg, 10%) !default;
 
 // Inverted navbar links
-$navbar-inverse-link-color:                 lighten($gray-light, 15%) !default;
+$navbar-inverse-link-color:                 lighten($grey-light, 15%) !default;
 $navbar-inverse-link-hover-color:           #fff !default;
 $navbar-inverse-link-hover-bg:              transparent !default;
 $navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color !default;
@@ -484,25 +484,25 @@ $navbar-inverse-toggle-border-color:        #333 !default;
 
 //=== Shared nav styles
 $nav-link-padding:                          10px 15px !default;
-//$nav-link-hover-bg:                         $gray-lighter !default;
-$nav-link-hover-bg:                         $gray !default;
+//$nav-link-hover-bg:                         $grey-lighter !default;
+$nav-link-hover-bg:                         $grey !default;
 
-//$nav-disabled-link-color:                   $gray-light !default;
-//$nav-disabled-link-hover-color:             $gray-light !default;
-$nav-disabled-link-color:                   $gray !default;
-$nav-disabled-link-hover-color:             $gray !default;
+//$nav-disabled-link-color:                   $grey-light !default;
+//$nav-disabled-link-hover-color:             $grey-light !default;
+$nav-disabled-link-color:                   $grey !default;
+$nav-disabled-link-hover-color:             $grey !default;
 
 //== Tabs
 //$nav-tabs-border-color:                     #ddd !default;
 $nav-tabs-border-color:                     #ddd !default;
 
-//$nav-tabs-link-hover-border-color:          $gray-lighter !default;
+//$nav-tabs-link-hover-border-color:          $grey-lighter !default;
 $nav-tabs-link-hover-border-color:          transparent !default;
 
 //$nav-tabs-active-link-hover-bg:             $body-bg !default;
-$nav-tabs-active-link-hover-bg:             $gray !default;
-//$nav-tabs-active-link-hover-color:          $gray !default;
-$nav-tabs-active-link-hover-color:          $gray-light !default;
+$nav-tabs-active-link-hover-bg:             $grey !default;
+//$nav-tabs-active-link-hover-color:          $grey !default;
+$nav-tabs-active-link-hover-color:          $grey-light !default;
 //$nav-tabs-active-link-hover-border-color:   #ddd !default;
 $nav-tabs-active-link-hover-border-color:   transparent !default;
 
@@ -513,9 +513,9 @@ $nav-tabs-justified-active-link-border-color:     $body-bg !default;
 //== Pills
 $nav-pills-border-radius:                   $border-radius-base !default;
 //$nav-pills-active-link-hover-bg:            $component-active-bg !default;
-$nav-pills-active-link-hover-bg:            $gray !default;
+$nav-pills-active-link-hover-bg:            $grey !default;
 //$nav-pills-active-link-hover-color:         $component-active-color !default;
-$nav-pills-active-link-hover-color:         $gray-light !default;
+$nav-pills-active-link-hover-color:         $grey-light !default;
 
 
 //== Pagination
@@ -523,27 +523,27 @@ $nav-pills-active-link-hover-color:         $gray-light !default;
 //##
 
 //$pagination-color:                     $link-color !default;
-$pagination-color:                     $gray-light !default;
+$pagination-color:                     $grey-light !default;
 //$pagination-bg:                        #fff !default;
-$pagination-bg:                        $gray !default;
+$pagination-bg:                        $grey !default;
 //$pagination-border:                    #ddd !default;
 $pagination-border:                    transparent !default;
 
 //$pagination-hover-color:               $link-hover-color !default;
 $pagination-hover-color:               $pagination-color !default;
-//$pagination-hover-bg:                  $gray-lighter !default;
+//$pagination-hover-bg:                  $grey-lighter !default;
 $pagination-hover-bg:                  lighten($body-bg, 5%) !default;
 //$pagination-hover-border:              #ddd !default;
 $pagination-hover-border:              transparent !default;
 
 //$pagination-active-color:              #fff !default;
-$pagination-active-color:              $gray-light !default;
+$pagination-active-color:              $grey-light !default;
 //$pagination-active-bg:                 $brand-primary !default;
 $pagination-active-bg:                 lighten($body-bg, 5%) !default;
 //$pagination-active-border:             $brand-primary !default;
 $pagination-active-border:             transparent !default;
 
-$pagination-disabled-color:            $gray-light !default;
+$pagination-disabled-color:            $grey-light !default;
 //$pagination-disabled-bg:               #fff !default;
 $pagination-disabled-bg:               $body-bg !default;
 //$pagination-disabled-border:           #ddd !default;
@@ -573,8 +573,8 @@ $pager-disabled-bg:                    $pagination-disabled-bg !default;
 
 $jumbotron-padding:              30px !default;
 //$jumbotron-color:                inherit !default;
-$jumbotron-color:                $gray-dark !default;
-$jumbotron-bg:                   $gray-lighter !default;
+$jumbotron-color:                $grey-dark !default;
+$jumbotron-bg:                   $grey-lighter !default;
 $jumbotron-heading-color:        inherit !default;
 $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
 $jumbotron-heading-font-size:    ceil(($font-size-base * 4.5)) !default;
@@ -655,8 +655,8 @@ $popover-arrow-outer-fallback-color:  darken($popover-fallback-border-color, 20%
 //##
 
 //** Default label background color
-//$label-default-bg:            $gray-light !default;
-$label-default-bg:            $gray !default;
+//$label-default-bg:            $grey-light !default;
+$label-default-bg:            $grey !default;
 //** Primary label background color
 $label-primary-bg:            $brand-primary !default;
 //** Success label background color
@@ -762,7 +762,7 @@ $progress-bar-info-bg:        $brand-info !default;
 
 //** Background color on `.list-group-item`
 //$list-group-bg:                 #fff !default;
-$list-group-bg:                 $gray-light !default;
+$list-group-bg:                 $grey-light !default;
 //** `.list-group-item` border color
 $list-group-border:             #ddd !default;
 //** List group border radius
@@ -783,9 +783,9 @@ $list-group-active-border:      #ddd !default;
 $list-group-active-text-color:  lighten($list-group-active-bg, 40%) !default;
 
 //** Text color of disabled list items
-$list-group-disabled-color:      $gray-light !default;
+$list-group-disabled-color:      $grey-light !default;
 //** Background color of disabled list items
-$list-group-disabled-bg:         $gray-lighter !default;
+$list-group-disabled-bg:         $grey-lighter !default;
 //** Text color for content within disabled list items
 $list-group-disabled-text-color: $list-group-disabled-color !default;
 
@@ -809,7 +809,7 @@ $panel-border-radius:         0 !default;
 $panel-inner-border:          #ddd !default;
 $panel-footer-bg:             #f5f5f5 !default;
 
-$panel-default-text:          $gray-dark !default;
+$panel-default-text:          $grey-dark !default;
 $panel-default-border:        #ddd !default;
 $panel-default-heading-bg:    #f5f5f5 !default;
 
@@ -858,9 +858,9 @@ $thumbnail-caption-padding:   9px !default;
 //##
 
 //$well-bg:                     #f5f5f5 !default;
-//$well-bg:                     $gray-base !default;
-$well-bg:                     $gray-lighter !default;
-$well-color:                  $gray !default;
+//$well-bg:                     $grey-base !default;
+$well-bg:                     $grey-lighter !default;
+$well-color:                  $grey !default;
 $well-border:                 darken($well-bg, 7%) !default;
 
 
@@ -869,17 +869,17 @@ $well-border:                 darken($well-bg, 7%) !default;
 //##
 
 //$badge-color:                 #fff !default;
-$badge-color:                 $gray-dark !default;
+$badge-color:                 $grey-dark !default;
 //** Linked badge text color on hover
 //$badge-link-hover-color:      #fff !default;
 $badge-link-hover-color:      $badge-color !default;
-$badge-bg:                    $gray-light !default;
+$badge-bg:                    $grey-light !default;
 
 //** Badge text color in active nav link
 $badge-active-color:          $link-color !default;
 //** Badge background color in active nav link
 //$badge-active-bg:             #fff !default;
-$badge-active-bg:             $gray-lighter !default;
+$badge-active-bg:             $grey-lighter !default;
 
 $badge-font-weight:           bold !default;
 $badge-line-height:           1 !default;
@@ -899,7 +899,7 @@ $breadcrumb-bg:                 #eaeaea !default;
 //$breadcrumb-color:              #ccc !default;
 $breadcrumb-color:              #333 !default;
 //** Text color of current page in the breadcrumb
-//$breadcrumb-active-color:       $gray-light !default;
+//$breadcrumb-active-color:       $grey-light !default;
 $breadcrumb-active-color:       #333 !default;
 //** Textual separator for between breadcrumb elements
 $breadcrumb-separator:          "/" !default;
@@ -942,7 +942,7 @@ $kbd-color:                   #fff !default;
 $kbd-bg:                      #333 !default;
 
 $pre-bg:                      #f5f5f5 !default;
-$pre-color:                   $gray-dark !default;
+$pre-color:                   $grey-dark !default;
 $pre-border-color:            #ccc !default;
 $pre-scrollable-max-height:   340px !default;
 
@@ -954,20 +954,20 @@ $pre-scrollable-max-height:   340px !default;
 //** Horizontal offset for forms and lists.
 $component-offset-horizontal: 180px !default;
 //** Text muted color
-$text-muted:                  $gray-light !default;
+$text-muted:                  $grey-light !default;
 //** Abbreviations and acronyms border color
-$abbr-border-color:           $gray-light !default;
+$abbr-border-color:           $grey-light !default;
 //** Headings small color
-$headings-small-color:        $gray-light !default;
+$headings-small-color:        $grey-light !default;
 //** Blockquote small color
-$blockquote-small-color:      $gray-light !default;
+$blockquote-small-color:      $grey-light !default;
 //** Blockquote font size
 $blockquote-font-size:        ($font-size-base * 1.25) !default;
 //** Blockquote border color
-$blockquote-border-color:     $gray-lighter !default;
+$blockquote-border-color:     $grey-lighter !default;
 //** Page header border color
-$page-header-border-color:    $gray-lighter !default;
+$page-header-border-color:    $grey-lighter !default;
 //** Width of horizontal description list titles
 $dl-horizontal-offset:        $component-offset-horizontal !default;
 //** Horizontal line color.
-$hr-border:                   $gray-lighter !default;
+$hr-border:                   $grey-lighter !default;
