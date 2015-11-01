@@ -1,10 +1,16 @@
 @charset "UTF-8";
-/*$gray-base:              #000 !default;
-$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
-$gray-dark:              lighten($gray-base, 20%) !default;   // #333
-$gray:                   lighten($gray-base, 33.5%) !default; // #555
-$gray-light:             lighten($gray-base, 46.7%) !default; // #777
-$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee*/
+/*$grey-base:              #000 !default;
+$grey-darker:            lighten($grey-base, 13.5%) !default; // #222
+$grey-dark:              lighten($grey-base, 20%) !default;   // #333
+$grey:                   lighten($grey-base, 33.5%) !default; // #555
+$grey-light:             lighten($grey-base, 46.7%) !default; // #777
+$grey-lighter:           lighten($grey-base, 93.5%) !default; // #eee*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bebas Neue"), url("../fonts/bebas/BebasNeue.woff") format("woff"); }
 /*$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
 $font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
 $font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
@@ -264,8 +270,8 @@ th {
     border: 1px solid #ddd !important; } }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../bootstrap/fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../bootstrap/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../bootstrap/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../bootstrap/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../bootstrap/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../bootstrap/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 .glyphicon {
   position: relative;
   top: 1px;
@@ -1080,7 +1086,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.42857;
   color: #eaeaea;
@@ -5186,7 +5192,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5292,7 +5298,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5823,14 +5829,14 @@ button.close {
   border-color: transparent; }
 
 .nav-tabs > li > a, .nav-pills > li > a {
-  color: #eaeaea;
+  color: #777777;
   margin-right: 0; }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-  background: linear-gradient(to top, #cc0000 0%, #cc0000 5px, #575757 5px); }
+  background: linear-gradient(to top, #cc0000 0%, #cc0000 5px, #555555 5px); }
 
 .open > .dropdown-toggle {
-  background: linear-gradient(to right, #cc0000 0%, #cc0000 5px, #575757 5px); }
+  background: linear-gradient(to right, #cc0000 0%, #cc0000 5px, #555555 5px); }
 
 .dropdown-menu {
   padding: 0;
@@ -5840,13 +5846,13 @@ button.close {
     margin: 5px auto;
     width: 80%; }
   .dropdown-menu li.active {
-    background: linear-gradient(to rigth, #cc0000 0%, #cc0000 5px, #eaeaea 5px); }
+    background: linear-gradient(to rigth, #cc0000 0%, #cc0000 5px, #777777 5px); }
 
 .table {
   color: #aaaaaa; }
 
 .table > thead {
-  color: #eaeaea; }
+  color: #777777; }
 
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {
@@ -5859,7 +5865,7 @@ button.close {
   border-top-right-radius: 0; }
 
 .pager a {
-  color: #eaeaea; }
+  color: #777777; }
 .pager .disabled > a,
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
@@ -5874,20 +5880,20 @@ button.close {
   border-radius: 0; }
 
 .list-group-item {
-  color: #191919; }
+  color: #333333; }
   .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
     background: linear-gradient(to right, #cc0000 0%, #cc0000 5px, #252525 5px); }
 
 .panel {
-  color: #191919; }
+  color: #333333; }
 
 .well {
   color: #575757; }
 
 .help-block {
-  color: #979797; }
+  color: #959595; }
 
 .popover, .modal {
-  color: #575757; }
+  color: #555555; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=nb-bootstrap.css.map */
