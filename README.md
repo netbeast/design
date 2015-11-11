@@ -1,6 +1,6 @@
 # Netbeast style guide
 
-Check out how the netbeast styles look like at the [styleguide](http://netbeast-co.github.io/design/)
+Check out how the netbeast styles look like at the [styleguide](http://netbeast.github.io/design/)
 
 ## Main components
 
