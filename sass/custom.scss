@@ -1,6 +1,28 @@
 
 // Navbar and nav tweaks
 
+.btn {
+  border-width: 2px;
+  border-bottom-width: 3px;
+}
+
+.btn-inverted { color: #fff; border-color: #fff; background-color: transparent;
+  &:hover { color: #fff; }
+}
+
+.btn-primary:hover { background-color: rgba(241, 38, 76, .5); color: #fff; }
+.btn-success:hover { background-color: rgba(0, 254, 165, .5); color: #fff; }
+.btn-info:hover { background-color: rgba(0, 233, 207, .5); color: #fff; }
+.btn-warning:hover { background-color: rgba(255, 232, 103, .5); color: #fff; }
+.btn-danger:hover { background-color: rgba(118, 115, 191, .5); color: #fff; }
+
+.btn-primary:active , .btn-primary.active  { background-color: rgb(241, 38, 76); color: #fff; }
+.btn-success:active , .btn-success.active  { background-color: rgb(0, 254, 165); color: #fff; }
+.btn-info:active , .btn-info.active  { background-color: rgb(0, 233, 207); color: #fff; }
+.btn-warning:active , .btn-warning.active  { background-color: rgb(255, 232, 103); color: #fff; }
+.btn-danger:active , .btn-danger.active  { background-color: rgb(118, 115, 191); color: #fff; }
+
+
 .navbar-default input {
   color: #eee;
 }
@@ -13,6 +35,10 @@
   color: inherit !important;
 }
 
+.alert .close {
+  color: #000;
+}
+
 input.form-control {
   border: 0;
   outline: none;
@@ -20,9 +46,26 @@ input.form-control {
   border-bottom: 3px solid;
   &:focus {
     box-shadow: none;
- }
+  }
 }
 
+.input-group-addon {
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  border-bottom: 3px solid;
+}
+
+.input-group input { position: relative; top: 3px; }
+
 .well {
-  color: #eee;
+  color: #f5f5f5;
+}
+
+.well input, .well input:focus, .well active {
+  border-color: white;
+}
+
+.tab-pane {
+  padding-top: 20px;
 }
