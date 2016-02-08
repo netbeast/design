@@ -1,39 +1,118 @@
 
+/*
+* ===============================================
+* BUTTONS
+* ===============================================
+*/
 
-.btn {
-  border-width: 2px;
-  border-bottom-width: 3px;
-}
+.btn.btn-link { border: none; }
+
+.btn:focus { border-color: inherit; }
 
 .btn-inverted { color: #fff; border-color: #fff; background-color: transparent;
   &:visited, &:hover, &:focus { color: #fff; }
 }
 
-.btn-primary:hover { background-color: rgba(241, 38, 76, .5); color: #fff; }
-.btn-success:hover { background-color: rgba(0, 254, 165, .5); color: #fff; }
-.btn-info:hover { background-color: rgba(0, 233, 207, .5); color: #fff; }
-.btn-warning:hover { background-color: rgba(255, 232, 103, .5); color: #fff; }
-.btn-danger:hover { background-color: rgba(118, 115, 191, .5); color: #fff; }
+.btn-primary:hover {
+  background-color: rgba(241, 38, 76, .5);
+  border-color: $brand-primary;
+  color: #fff;
+}
+.btn-success:hover {
+  background-color: rgba(0, 254, 165, .5);
+  border-color: $brand-success;
+  color: #fff;
+}
+.btn-info:hover {
+  background-color: rgba(0, 233, 207, .5);
+  border-color: $brand-info;
+  color: #fff;
+}
+.btn-warning:hover {
+  background-color: rgba(255, 232, 103, .5);
+  border-color: $brand-warning;
+  color: #fff;
+}
+.btn-danger:hover {
+  background-color: rgba(118, 115, 191, .5);
+  border-color: $brand-danger;
+  color: #fff;
+}
 
-a.btn.btn-primary:active,
-.btn.btn-primary:active,
-.btn.btn-primary.active { background-color: rgb(241, 38, 76); color: #fff; }
-a.btn.btn-success:active,
-.btn.btn-success:active,
-.btn.btn-success.active { background-color: rgb(0, 254, 165); color: #fff; }
-a.btn.btn-info:active,
-.btn.btn-info:active,
-.btn.btn-info.active  { background-color: rgb(0, 233, 207); color: #fff; }
-a.btn.btn-warning:active,
-.btn.btn-warning:active,
-.btn.btn-warning.active  { background-color: rgb(255, 232, 103); color: #fff; }
-a.btn.btn-danger:active,
-.btn.btn-danger:active,
-.btn.btn-danger.active  { background-color: rgb(118, 115, 191); color: #fff; }
+a.btn.btn-primary:active, .btn.btn-primary:active, .btn.btn-primary.active {
+  background-color: rgb(241, 38, 76);
+  border-color: $brand-primary;
+  color: #fff;
+}
 
+a.btn.btn-success:active, .btn.btn-success:active, .btn.btn-success.active {
+  background-color: rgb(0, 254, 165);
+  border-color: $brand-success;
+  color: #fff;
+}
+a.btn.btn-info:active, .btn.btn-info:active, .btn.btn-info.active  {
+  background-color: rgb(0, 233, 207);
+  border-color: $brand-info;
+  color: #fff;
+}
+a.btn.btn-warning:active, .btn.btn-warning:active, .btn.btn-warning.active  {
+  background-color: rgb(255, 232, 103);
+  border-color: $brand-warning;
+  color: #fff;
+}
+a.btn.btn-danger:active, .btn.btn-danger:active, .btn.btn-danger.active  {
+  background-color: rgb(118, 115, 191);
+  border-color: $brand-danger;
+  color: #fff;
+}
 
-.navbar-default input {
-  color: #eee;
+.btn.btn-filled.btn-info {
+  background-color: $brand-info;
+  border: 0px solid $brand-info;
+  border-bottom-width: 3px;
+  border-bottom-color: darken($brand-info, 10%);
+}
+.btn.btn-filled.btn-primary {
+  background-color: $brand-primary;
+  border: 0px solid $brand-primary;
+  border-bottom-width: 3px;
+  border-bottom-color: darken($brand-primary, 10%);
+}
+.btn.btn-filled.btn-success {
+  background-color: $brand-success;
+  border: 0px solid $brand-success;
+  border-bottom-width: 3px;
+  border-bottom-color: darken($brand-success, 10%);
+}
+.btn.btn-filled.btn-warning {
+  background-color: $brand-warning;
+  border: 0px solid $brand-warning;
+  border-bottom-width: 3px;
+  border-bottom-color: darken($brand-warning, 10%);
+}
+.btn.btn-filled.btn-danger {
+  background-color: $brand-danger;
+  border: 0px solid $brand-danger;
+  border-bottom-width: 3px;
+  border-bottom-color: darken($brand-danger, 10%);
+}
+.btn.btn-filled.btn-inverted {
+    background-color: #fff;
+    border-bottom-width: 3px;
+    color: $grey-base;
+}
+
+.btn.btn-filled { color: white; }
+a.btn.btn-filled:active { border-bottom-width: 1px; }
+
+/*
+* ===============================================
+* OVER DARK ELEMENTS
+* ===============================================
+*/
+
+.navbar {
+  border-bottom-width: 4px;
 }
 
 .navbar-brand img {
@@ -88,3 +167,14 @@ input.form-control {
 .has-error label.control-label { color: $brand-primary; }
 .has-success label.control-label { color: $brand-success; }
 .has-warning label.control-label { color: $brand-warning; }
+
+/*
+* ===============================================
+* Text
+* ===============================================
+*/
+
+em {
+  font-style: normal;
+  font-family: 'Proxima Nova'
+}
